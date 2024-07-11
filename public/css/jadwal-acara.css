@@ -1,0 +1,94 @@
+/* Jadwal Acara */
+
+#jadwal-acara-container {
+    margin: 50px;
+}
+
+#current-day {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #2a8939;
+}
+
+.nama-hari {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jadwal-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jadwal-acara {
+    background: white;
+    box-shadow: 0 0 15px rgba(42, 137, 57, 0.6);
+    width: 60%;
+    max-height: 600px;
+    margin: 20px auto;
+    overflow-y: auto;
+    border-radius: 30px;
+    border: 2px solid #2a8939;
+}
+
+.jadwal-acara table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.jadwal-acara table th,
+.jadwal-acara table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.jadwal-acara table thead {
+    background: rgba(42, 137, 57, 1);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.jadwal-acara table tbody {
+    position: relative;
+}
+
+.jadwal-acara table tbody::after {
+    content: "";
+    position: absolute;
+    background: rgba(42, 137, 57, 1);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    z-index: -1;
+}
+
+.jadwal-acara::-webkit-scrollbar {
+    width: 8px;
+}
+
+.jadwal-acara::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.jadwal-acara::-webkit-scrollbar-thumb {
+    background: #F3F3F3;
+    border-radius: 6px;
+}
+
+.jadwal-acara::-webkit-scrollbar-thumb:hover {
+    background: #6c757d;
+}
+
+.btn-custom {
+    background-color: #2A8939;
+    font-family: Poppins, sans-serif;
+    font-size: 38px;
+    padding: 0 15px;
+    border-radius: 50%;
+}

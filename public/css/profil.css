@@ -1,0 +1,59 @@
+/*Profil*/
+#profil-container {
+    margin: 90px 0 0 0;
+}
+
+#profil-container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#profil-container .logo {
+    text-align: center;
+}
+
+
+#profil-container .logo img{
+    width: 15%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+#profil-container .title hr {
+    flex: 1;
+    margin: 0 10px;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mtatv,
+.alamat2 {
+    background-color: rgba(207, 226, 224, 0.5);
+    padding: 20px 50px 20px 50px;
+}
+
+.program, .sosial-media {
+    background: #ffffff;
+    padding: 20px 50px 20px 50px;
+}
+
+.profile-title {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+#profil-container p {
+    line-height: 2em;
+}
+
+
+

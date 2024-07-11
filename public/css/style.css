@@ -1,0 +1,639 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+p, h3, h1, h2, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+/*General*/
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.title h3 {
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #333;
+}
+
+.title hr {
+    flex: 1;
+    border: none;
+    height: 3px;
+    margin-top: 43px;
+    background-image: linear-gradient(to right, #073E06 80%, #073E06 90%, #D08442 49%);
+    background-size: 100% auto;
+}
+
+
+
+
+
+.deskripsi, .judul {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2.4em;
+    line-height: 1.2em;
+}
+
+
+/*Container*/
+#beranda-container,
+#detail-container {
+    margin: 50px 0 0 0;
+}
+
+
+
+#jihad-pagi-container,
+#berita-container {
+    margin: 50px 50px 0 50px;
+}
+
+/*Beranda*/
+
+.beranda-contents,
+.video-populer,
+.video {
+    margin: 0 50px 0 50px;
+}
+
+.beranda-contents {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.live-streaming {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50.00%;
+    overflow: hidden;
+}
+
+.live-streaming iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-populer {
+    margin-bottom: 20px;
+}
+
+.videos-content {
+    height: 350px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.videos-content::-webkit-scrollbar {
+    display: none;
+}
+
+.videos {
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.videos:last-child {
+    margin-right: 0;
+}
+
+.video-container {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.video-details .video-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.judul {
+    font-weight: bold;
+}
+
+.deskripsi{
+    font-size: smaller;
+}
+
+.talkshow {
+    background: rgba(207, 226, 224, 0.5);
+    margin-top: 20px;
+    padding: 0 50px 40px 50px;
+}
+
+.talkshow-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.talkshow-videos {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.talkshow-videos.hidden {
+    display: none;
+}
+
+.video-container-talkshow{
+    width: 35%;
+    height: auto;
+}
+
+
+.talkshow-videos .video-container-talkshow {
+    overflow: hidden;
+}
+
+
+#showAllVideos {
+    display: none;
+}
+
+.videos-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-cat {
+    gap: 60px;
+    margin-bottom: 10px;
+}
+
+.filtered {
+    background: #2a8939;
+    padding: 10px 20px;
+    width: fit-content;
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.video-each-cat{
+    gap: 20px;
+    height: 500px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    padding: 10px 3px;
+}
+
+.video-each-cat::-webkit-scrollbar {
+    display: none;
+}
+
+.videos-video {
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* margin-right: 20px; */
+    width: 30%;
+    cursor: pointer;
+}
+
+
+/* Jadwal Acara User */
+
+
+/*Talkshow*/
+.talkshow-container{
+    margin: 50px 50px 50px 50px;
+}
+
+.video-item {
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.video-thumbnail {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    /* background: #75e886; */
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+
+.video-type {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2a8939;
+}
+
+
+
+
+
+.pagination {
+    margin-top: 10px;
+}
+
+.arrow-down,
+.arrow-up {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down button,
+.arrow-up button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-down i:hover,
+.arrow-up i:hover {
+    opacity: 50%;
+}
+
+
+
+/*Jihad Pagi*/
+
+#more {display: none;}
+
+#jihad-pagi-container .description p {
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.parsing,
+.showLess,
+.showAll {
+    display: flex;
+    align-items: center;
+}
+
+.parsing hr,
+.showAll hr,
+.showLess hr {
+    flex: 1;
+    height: 1px;
+    background-color: #f3f3f3;
+    margin: 0 10px;
+    border-style: dashed;
+    border-spacing: 5px;
+}
+
+#myBtn {
+    cursor: pointer;
+    color: #333;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: Poppins, sans-serif;
+    margin: 40px 0;
+}
+
+#myBtn:hover {
+    color: white;
+    background: #2A8939;
+    border: 1px solid #2A8939;
+}
+
+.mp3 #button {
+    background: #2a8939;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    width: fit-content;
+}
+
+.mp3 #button:hover {
+    background: #1e6d38;
+}
+
+.mp3 #button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* DETAIL VIDEO */
+
+.detail-vid-des {
+    padding: 20px 55px;
+}
+
+.detail-vid-judul {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.detail-vid-video {
+    padding: 20px 50px 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-vid-terkait {
+    background-color: #CFE2E0;
+    padding: 30px 50px;
+}
+
+
+
+
+
+/*Admin*/
+/* CSS untuk Tampilan Formulir Tambah Jadwal Acara */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+} */
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Style for table */
+/* Style for table */
+#berita-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#berita-table th, #berita-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#berita-table th {
+    background-color: #2a8939;
+    color: white;
+}
+
+/* Style for odd rows */
+#berita-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Warna abu-abu */
+}
+
+/* Style for even rows */
+#berita-table tbody tr:nth-child(even) {
+    background-color: #fff; /* Warna putih */
+}
+
+/* Button styles */
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #2a8939;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsive table */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/*Floating Link*/
+.floating-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.floating-link:hover {
+    color: #0056b3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    /* navbar */
+    .menus {
+        visibility: hidden;
+    }
+
+    /* beranda */
+    .streaming {
+        margin-top: 80px;
+    }
+
+    .streaming,
+    .video-populer,
+    .video {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .title h3 {
+        font-size: 20px;
+    }
+
+    .title hr {
+        margin-top: 35px;
+    }
+
+    .videos, .videos-video {
+        width: 100%;
+    }
+
+    .talkshow {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .talkshow-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+
+
+
+    .short-judul,
+    .short-des {
+        display: block;
+    }
+
+    .short-judul {
+        font-weight: bold;
+    }
+
+    /* #showAllVideos {
+        display: block;
+    } */
+
+    /* footer */
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-top .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-top .logo img {
+        max-width: 80%;
+    }
+
+    .links,
+    .media,
+    .alamat .titles {
+        display: none;
+    }
+
+    .alamat p {
+        text-align: center;
+    }
+
+    .alamat {
+        padding: 0px;
+    }
+
+    .alamat .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: #2a8939;
+        font-size: 20px;
+    }
+
+    .contact {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .contact a:hover {
+        text-decoration: underline;
+        color: #2A8939;
+    }
+}
+
+
+
+
